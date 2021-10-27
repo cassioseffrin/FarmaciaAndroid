@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="br.edu.cassio.farmaciadrawer.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="br.edu.cassio.farmaciadrawer.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+    android:id="@+id/nav_slideshow"
+    android:name="br.edu.cassio.farmaciadrawer.ui.slideshow.SlideshowFragment"
+    android:label="@string/menu_slideshow"
+    tools:layout="@layout/fragment_slideshow" />
+
+
+    <activity
+        android:id="@+id/nav_customer"
+        android:name="br.edu.cassio.farmaciadrawer.ui.customer.CustomerActivity"
+        android:label="@string/menu_customer"
+        tools:layout="@layout/activity_customer" />
+
+    <activity
+        android:id="@+id/nav_employe"
+        android:name="br.edu.cassio.farmaciadrawer.ui.employe.EmployeActivity"
+        android:label="@string/menu_employe"
+        tools:layout="@layout/activity_employe" />
+
+
+    <activity
+        android:id="@+id/nav_product"
+        android:name="br.edu.cassio.farmaciadrawer.ui.product.ProductActivity"
+        android:label="@string/menu_product"
+        tools:layout="@layout/activity_product" />
+
+
+
+
+</navigation>
