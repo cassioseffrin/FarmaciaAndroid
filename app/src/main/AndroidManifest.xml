@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.edu.cassio.farmaciadrawer">
+
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,8 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FarmaciaDrawer">
-        <activity android:name=".ui.customer.CustomerActivity"></activity>
+        <activity android:name=".ui.customer.FormActivity"></activity>
         <activity android:name=".ui.product.ProductActivity" />
+        <activity android:name=".ui.customer.CustomerActivity" />
         <activity android:name=".ui.employe.EmployeActivity" />
         <activity
             android:name=".MainActivity"

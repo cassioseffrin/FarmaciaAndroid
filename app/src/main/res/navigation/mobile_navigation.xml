@@ -37,11 +37,11 @@
         tools:layout="@layout/activity_employe" />
 
 
-    <activity
+    <fragment
         android:id="@+id/nav_product"
-        android:name="br.edu.cassio.farmaciadrawer.ui.product.ProductActivity"
+        android:name="br.edu.cassio.farmaciadrawer.ui.product.ProdutoFragment"
         android:label="@string/menu_product"
-        tools:layout="@layout/activity_product" />
+        tools:layout="@layout/fragment_item_list" />
 
 
 

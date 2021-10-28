@@ -1,6 +1,8 @@
 package br.edu.cassio.farmaciadrawer.ui.customer;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import br.edu.cassio.farmaciadrawer.R;
 import br.edu.cassio.farmaciadrawer.databinding.ActivityMainBinding;
@@ -8,8 +10,12 @@ import android.app.ProgressDialog;
 import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -30,10 +36,21 @@ public class CustomerActivity extends AppCompatActivity {
     Handler mainHandler = new Handler();
     ProgressDialog progressDialog;
 
+    FloatingActionButton fab;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customer);
+        fab = findViewById(R.id.fabCustomer);
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CustomerActivity.this, FormActivity.class);
+                startActivity(intent);
+            }
+        });
         iniciarListaClientes();
         new FetchData().start();
     }
