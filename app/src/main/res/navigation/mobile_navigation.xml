@@ -11,19 +11,6 @@
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
-    <fragment
-        android:id="@+id/nav_gallery"
-        android:name="br.edu.cassio.farmaciadrawer.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-    android:id="@+id/nav_slideshow"
-    android:name="br.edu.cassio.farmaciadrawer.ui.slideshow.SlideshowFragment"
-    android:label="@string/menu_slideshow"
-    tools:layout="@layout/fragment_slideshow" />
-
-
     <activity
         android:id="@+id/nav_customer"
         android:name="br.edu.cassio.farmaciadrawer.ui.customer.CustomerActivity"
@@ -36,14 +23,16 @@
         android:label="@string/menu_employe"
         tools:layout="@layout/activity_employe" />
 
-
     <fragment
         android:id="@+id/nav_product"
         android:name="br.edu.cassio.farmaciadrawer.ui.product.ProdutoFragment"
         android:label="@string/menu_product"
         tools:layout="@layout/fragment_item_list" />
 
-
-
+    <activity
+        android:id="@+id/nav_order"
+        android:name="br.edu.cassio.farmaciadrawer.ui.order.OrderActivity"
+        android:label="@string/menu_order"
+        tools:layout="@layout/activity_order" />
 
 </navigation>
